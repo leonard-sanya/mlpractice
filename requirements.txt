@@ -1,5 +1,11 @@
-scikit-learn
-pandas
-numpy
-matplotlib
-matplotlib
+fastapi
+uvicorn
+Pillow
+python-multipart
+supervision
+ultralytics
+huggingface_hub
+timm
+PyJWT
+passlib
+bcrypt==3.2.0
