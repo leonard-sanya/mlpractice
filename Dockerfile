@@ -21,7 +21,7 @@ COPY ./main.py /code/main.py
 # Copy the models directory into the working directory
 COPY ./models /code/models
 
-EXPOSE 8000
+EXPOSE 8001
 
 # Specify the command to run the FastAPI app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]
