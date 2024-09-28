@@ -96,6 +96,10 @@ def decode_token(token: str):
     except PyJWTError:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Face Recognition FastAPI app!"}
+
 
 # Token Generation Endpoint
 @app.post("/token")
